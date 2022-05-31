@@ -5,7 +5,7 @@
 - Ask clarifying questions
 
 ### User Stories
-- As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square.
+- As a user, I can see a page with a 3 by 3 grid board game with a question mark in each square. (done)
   - Branch: board-game
   - Rendered one square with the Square component
   - Mapped over the Square to get nine squares
@@ -13,6 +13,10 @@
   - Passed the value of the array in state to Square (aka "?")
   - Cleaned up the warning by adding a key with the index of each item in the array
 - As a user, when I click on one of the question marks an alert appears with the index position of that question mark in the array.
+   - Branch: alert-index
+   - Pass index to the Square component
+   - Add an onClick to Square
+   - Pass a method from App to Square to alert the index
 - As a user, when I click on one of the question marks instead of the alert the question mark turns into a tree emoji.
 - As a user, if I select the winning square the question mark will become a treasure emoji and if I select the losing square the question mark will become a bomb emoji.
 - As a user, I can click on a “Play Again” button that will restart the game.
